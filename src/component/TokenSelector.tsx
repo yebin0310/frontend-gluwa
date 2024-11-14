@@ -1,13 +1,10 @@
-// component/TokenSelector.tsx
-
 import React from 'react';
 
 interface TokenSelectorProps {
   onClose: () => void;
-  onSelect: (token: string) => void;
 }
 
-export const TokenSelector: React.FC<TokenSelectorProps> = ({ onClose, onSelect }) => {
+export const TokenSelector: React.FC<TokenSelectorProps> = ({ onClose }) => {
   return (
     <section className="layer-wrap">
       <div className="dimmed" onClick={onClose}></div>
@@ -25,28 +22,28 @@ export const TokenSelector: React.FC<TokenSelectorProps> = ({ onClose, onSelect 
             <div className="select-token-wrap">
               <div className="currency-list-wrap">
                 <div className="lists">
-                  <button type="button" className="currency-label" onClick={() => onSelect('CTC')}>
+                  <button type="button" className="currency-label" onClick={() => { }}>
                     <div className="token CTC" data-token-size="36"></div>
                     <div className="name">
                       <div className="full">Creditcoin</div>
                       <span>CTC</span>
                     </div>
                   </button>
-                  <button type="button" className="currency-label" onClick={() => onSelect('USDC')}>
+                  <button type="button" className="currency-label" onClick={() => { }}>
                     <div className="token USDC" data-token-size="36"></div>
                     <div className="name">
                       <div className="full">USDCoin</div>
                       <span>USDC</span>
                     </div>
                   </button>
-                  <button type="button" className="currency-label" onClick={() => onSelect('USDT')}>
+                  <button type="button" className="currency-label" onClick={() => { }}>
                     <div className="token USDT" data-token-size="36"></div>
                     <div className="name">
                       <div className="full">Tether USD</div>
                       <span>USDT</span>
                     </div>
                   </button>
-                  <button type="button" className="currency-label" onClick={() => onSelect('WCTC')}>
+                  <button type="button" className="currency-label" onClick={() => { }}>
                     <div className="token WCTC" data-token-size="36"></div>
                     <div className="name">
                       <div className="full">Wrapped CTC</div>
